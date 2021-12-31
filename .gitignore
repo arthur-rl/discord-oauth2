@@ -105,6 +105,3 @@ dist
 .tern-port
 
 lib
-
-#temporary
-examples/
