@@ -1,6 +1,6 @@
 {
   "name": "@arthur.dev/discord-oauth2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple NPM package to interact with the discord OAuth2 API",
   "main": "lib/index.js",
   "scripts": {
