@@ -55,7 +55,21 @@ console.log(connections);
 ```
 
 # Contributing
-All PRs are welcome. :)
+When contributing please ensure you use NPM as your package manager. 
+
+* ## **Building**
+    * `npm install` to install dependencies
+    * `npm run build` to build the module
+
+* ## **Development & Testing**
+    When contributing it is recommended to test your changes to do this you could use the [Express](https://github.com/arthur-rl/discord-oauth2/tree/master/examples/express) example. Or you could create a new example, though if you would like the push these changes please do so in a seperate pull request.
+* ## **Coding Conventions**
+    * Use 4 space indentation
+    * Use camelCase for function names and class members
+    * UPPER_CASE for constant variables defined in `src/constants.ts`
+
+* ## [**Commit Conventions**](https://www.conventionalcommits.org/en/v1.0.0/)
+
 
 
 

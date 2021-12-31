@@ -1,11 +1,11 @@
 {
   "name": "@arthur.dev/discord-oauth2",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple NPM package to interact with the discord OAuth2 API",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc -p.",
-    "publish": "npm run build && npm publish --access=public"
+    "build": "tsc -p .",
+    "build:publish": "npm run build && npm publish --access=public"
   },
   "types": "typings/index.d.ts",
   "repository": {
