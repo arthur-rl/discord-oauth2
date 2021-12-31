@@ -1,5 +1,5 @@
 import express from "express";
-import DiscordOAuth from "../.."
+import DiscordOAuth from "@arthur.dev/discord-oauth2";
 
 // initialize the express app instance
 const app = express();
