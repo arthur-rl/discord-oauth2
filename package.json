@@ -4,7 +4,8 @@
   "description": "A simple NPM package to interact with the discord OAuth2 API",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p.",
+    "publish": "npm run build && npm publish --access=public"
   },
   "types": "typings/index.d.ts",
   "repository": {
