@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from "axios";
-import { APIGuild as DiscordGuild } from "discord-api-types";
+import { APIConnection, APIGuild } from "discord-api-types";
 import { DISCORD_API_BASE_URI } from "../constants";
 import { IDiscordUser } from "../types";
 
@@ -41,11 +41,29 @@ export default class DiscordUser implements IDiscordUser {
         return this.user.createdAt;
     }
     
-    public async guilds(): Promise<DiscordGuild[]> {
+    /** 
+     * Fetches all user guilds from the Discord API
+     * Requires the `guilds` scope
+     * @returns Promise<APIGuild[]> 
+     */
+    public async guilds(): Promise<APIGuild[]> {
         return await new Promise((resolve, reject) => {
             this.axios.get("/guilds").then(d => {
                 resolve(d.data);
-            }).catch(reject)
+            }).catch(reject);
+        });
+    }
+
+    /**
+     * Fetches all user connections from the discord API.
+     * Requires the `connections` scope
+     * @returns Promise<APIConnection[]>
+     */
+    public async connections(): Promise<APIConnection[]> {
+        return await new Promise((resolve, reject) => {
+            this.axios.get("/connections").then(d => {
+                resolve(d.data);
+            }).catch(reject);
         });
     }
 }
