@@ -51,6 +51,23 @@ export default class DiscordOAuth {
         });
     }
 
+    public async exchangeRefreshToken(refresh_token: string): Promise<DiscordOAuthExchangeResponse> {
+        return await new Promise((resolve,  reject) => {
+            this.axios({
+                url: "/oauth2/token",
+                method: "POST",
+                data: qs.stringify({
+                    client_id: this.clientId,
+                    client_secret: this.clientSecret,
+                    grant_type: "refresh_token",
+                    refresh_token
+                })
+            }).then(d => {
+                resolve(d.data);
+            }).catch(reject);
+        });
+    }
+
     public async fetchUser(access_token: string): Promise<DiscordUser> {
         return await new Promise((resolve, reject) => {
             this.axios({
