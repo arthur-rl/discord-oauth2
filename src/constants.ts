@@ -1,0 +1,1 @@
+export const DISCORD_API_BASE_URI = "https://discord.com/api/v8"

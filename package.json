@@ -1,0 +1,35 @@
+{
+  "name": "discord-oauth2",
+  "version": "0.0.1",
+  "description": "A simple NPM package to interact with the discord OAuth2 API",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "typings/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthur-rl/discord-oauth2.git"
+  },
+  "keywords": [
+    "discord",
+    "oauth2",
+    "discord",
+    "api"
+  ],
+  "author": "Arthur Langley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arthur-rl/discord-oauth2/issues"
+  },
+  "homepage": "https://github.com/arthur-rl/discord-oauth2#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "discord-api-types": "^0.26.0",
+    "qs": "^6.10.2"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/qs": "^6.9.7"
+  }
+}
