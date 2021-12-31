@@ -8,14 +8,23 @@ A simple NPM package to interact with the discord OAuth2 API
 
 With NPM:
 ```
-npm install pending-name
+npm install @arthur.dev/discord-oauth2
 ```
 or with Yarn:
 ```
-yarn add pending-name
+yarn add @arthur.dev/discord-oauth2
 ```
 
 ## Usage
+
+
+```ts
+import DiscordOAuth from '@arthur.dev/discord-oauth2';
+```
+or
+```js
+const DiscordOAuth = require("@arthur.dev/discord-oauth2");
+```
 
 ```ts
 const oauth = new DiscordOAuth({
