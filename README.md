@@ -38,6 +38,10 @@ const oauth = new DiscordOAuth({
 ```ts
 const { access_token } = oauth.exchangeCode(code);
 ```
+* Exchange refresh token for a new Discord Access Token
+```ts
+const { access_token } = oauth.exchangeRefreshToken(refresh_token);
+```
 * Fetch user
 ```ts
 const user = await oauth.fetchUser(access_token)
